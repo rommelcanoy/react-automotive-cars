@@ -1,10 +1,23 @@
 import React from 'react'
+import { useEffect, useState } from 'react'
+import { useSelector } from 'react-redux'
 import CarList from '../components/CarList'
 import SearchBar from '../components/SearchBar'
 import SearchSelector from '../components/SearchSelector'
-import carsData from '../data/cars-dataset.json'
+// import carsData from '../data/cars-dataset.json'
 
 const Home = () => {
+
+  const [carsData, setCarsData] = useState([]);
+  const data = useSelector(state => state.car.carsData);
+
+  useEffect(() => {
+    console.log('data', data);
+    setCarsData(data);
+  }, [])
+
+  // console.log('carsData1', carsData1);
+
   return (
     <div className='max-w-screen-lg mx-auto pt-5'>
       {/* <div className='bg-neutral py-2 md:py-5 top-0'> */}

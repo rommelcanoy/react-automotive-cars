@@ -1,17 +1,16 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom'
 import Gallery from '../components/Gallery';
-import carsData from '../data/cars-dataset.json'
 import { dateFormatter } from '../utils/dateFormatter';
 import { moneyFormatter } from '../utils/moneyFormatter';
-
-
 
 const CarDetails = () => {
   const { id } = useParams();
   const [data, setData] = useState(null);
   const [imageCollection, setImageCollection] = useState([]);
+  const carsData = useSelector(state => state.car.carsData);
 
   useEffect(() => {
     // console.log('carsData', carsData);
