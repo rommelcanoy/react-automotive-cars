@@ -1,9 +1,9 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
-import { PhotoProvider, PhotoView, PhotoSlider } from 'react-photo-view';
+import { PhotoSlider } from 'react-photo-view';
 import GalleryItem from './GalleryItem';
 
-const Gallery = ({ data, imageCollection }) => {
+const Gallery = ({ imageCollection }) => {
   const [galleryView, setGalleryView] = useState(false);
   const [index, setIndex] = useState(0);
   const [galleryConfig, setGalleryConfig] = useState({

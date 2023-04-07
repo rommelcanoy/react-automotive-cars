@@ -10,8 +10,8 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="bg-neutral h-screen overflow-y-auto">
-      <div className='text-gray-800'>
+    <div className="bg-neutral">
+      <div className='text-gray-800 '>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/car_details/:id" element={<CarDetails />} />

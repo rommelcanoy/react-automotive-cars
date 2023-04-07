@@ -1,14 +1,14 @@
 import React from 'react'
-import CarCard from './CarCard'
+import CarItem from './CarItem'
 
-const CarGrid = ({ cars }) => {
+const CarList = ({ cars }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-5 p-5">
       {cars.map((car) => (
-        <CarCard key={car.id} car={car} />
+        <CarItem key={car.id} car={car} />
       ))}
     </div>
   )
 }
 
-export default CarGrid
+export default CarList

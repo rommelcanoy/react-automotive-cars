@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import placeHolderImage from '../assets/placeholder_image.jpg'
 import { moneyFormatter } from '../utils/moneyFormatter';
 
-const CarCard = ({ car }) => {
+const CarItem = ({ car }) => {
 
   const onError = (event) => {
     event.target.src = placeHolderImage;
@@ -36,4 +36,4 @@ const CarCard = ({ car }) => {
   )
 }
 
-export default CarCard
+export default CarItem
