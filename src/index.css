@@ -10,3 +10,11 @@ body {
 .debug {
   border: 1px solid red;
 }
+
+.find_active {
+  @apply text-white bg-gray-900 hover:bg-gray-700
+}
+
+.find_not_active {
+  @apply hover:bg-gray-200
+}
