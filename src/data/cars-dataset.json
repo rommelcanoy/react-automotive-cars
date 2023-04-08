@@ -36,11 +36,11 @@
     "model": "Charger",
     "year": 2018,
     "price": 23999,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHYXcpl-kWT5gaZpHVCCh6hjjXZCLR1mcnpQ&usqp=CAU",
+    "image": "https://www.westcoastexoticcars.com/imagetag/375/main/l/Used-2018-Dodge-Charger-RT-392-1610083059.jpg",
     "gallery": [
-      "https://example.com/images/charger_2018_1.jpg",
-      "https://example.com/images/charger_2018_2.jpg",
-      "https://example.com/images/charger_2018_3.jpg"
+      "https://savvy-images.azureedge.net/images/content/blogimages/7d81ce6f-a701-424a-aeb5-1c86776cf028.jpg",
+      "https://digital.pixelmotion.com/assets/theme/seo-page-builder/images/2018/Dodge/Charger/2018%20Dodge%20Charger%20Interior.jpg",
+      "https://cdn.carbuzz.com/gallery-images/1600/341000/0/341085.jpg"
     ],
     "ownership": [{
       "owner": "Mike Johnson",
@@ -59,8 +59,8 @@
     "price": 15999,
     "image": "https://www.autoguide.com/blog/wp-content/gallery/2016-honda-accord-1/AccordExterior10.jpg",
     "gallery": [
-      "https://example.com/images/accord_2016_1.jpg",
-      "https://example.com/images/accord_2016_2.jpg"
+      "https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/wp-content/uploads/2015/08/2016-Honda-Accord-EX-L-118.jpg",
+      "https://www.autoguide.com/blog/wp-content/uploads/2015/08/AccordExterior5.jpg"
     ],
     "ownership": [{
       "owner": "Emily Thompson",
@@ -87,8 +87,9 @@
     "price": 4999,
     "image": "https://cdn.carbuzz.com/gallery-images/1600/581000/900/581922.jpg",
     "gallery": [
-      "https://example.com/images/trailblazer_2009_1.jpg",
-      "https://example.com/images/trailblazer_2009_2.jpg"
+      "https://cars.usnews.com/static/images/Auto/izmo/301294/2009_chevrolet_trailblazer_frontseat.jpg",
+      "https://platform.cstatic-images.com/xlarge/in/v2/stock_photos/e7d44a09-451f-4170-b565-5dd5bf3d1ca5/413d8b42-b32d-4fff-8c08-8e7db264007b.png",
+      "https://coloradosuvrentals.com/wp-content/uploads/2009-chevrolet-trailblazer-lt-silver-6.jpg"
     ],
     "ownership": [{
       "owner": "Robert Johnson",
@@ -115,8 +116,8 @@
     "price": 2999,
     "image": "https://images.drive.com.au/driveau/image/upload/c_fill,f_auto,g_auto,h_674,q_auto:eco,w_1200/cms/uploads/jgopsx0bSuA57VNJ7zQO",
     "gallery": [
-      "https://example.com/images/focus_2009_1.jpg",
-      "https://example.com/images/focus_2009_2.jpg"
+      "https://cars.usnews.com/static/images/Auto/izmo/303450/2009_ford_focus_dashboard.jpg",
+      "https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_cg_hero_large/v1/editorial/dp/albums/album-916/lg/Ford-Focus-TDCi-2009-9.jpg"
     ],
     "ownership": [{
         "owner": "Jennifer Lee",
