@@ -54,7 +54,7 @@ const CarDetails = () => {
           <h1 className='font-semibold md:text-2xl uppercase'>{moneyFormatter(data.price)}</h1>
         </div>
 
-        <Gallery data={data} imageCollection={imageCollection} /> 
+        <Gallery data={data} imageCollection={imageCollection} />
 
         <div className='grid grid-cols-1 md:grid-cols-2 md:p-5 md:gap-3'>
           <div className='text-justify md:mr-10 md:mb-0 mb-5'>
@@ -62,21 +62,22 @@ const CarDetails = () => {
 
             <p className='text-sm text-gray-600'>{data.description}</p>
           </div>
-          <div className='grid grid-cols-2 gap-2'>
-            <div className=''>
-              <div className='my-2 text-sm font-semibold'>Ownership</div>
-              <ol className="relative border-l border-gray-200 dark:border-gray-700">
-                {
-                  data.ownership.slice().reverse().map((ownership) => (
-                    <li className="mb-6 ml-4" key={ownership.owner}>
-                      <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                      <time className="mb-1 text-xs leading-none text-gray-400 dark:text-gray-500">{dateFormatter(ownership.start_date)} - {dateFormatter(ownership.end_date)}</time>
-                      <h3 className="font-medium text-gray-900 dark:text-white text-xs">{ownership.owner}</h3>
-                    </li>
-                  ))
-                }
+          <div>
+            <div className='grid grid-cols-2 gap-2'>
+              <div className=''>
+                <div className='my-2 text-sm font-semibold'>Ownership</div>
+                <ol className="relative border-l border-gray-200 dark:border-gray-700">
+                  {
+                    data.ownership.slice().reverse().map((ownership) => (
+                      <li className="mb-6 ml-4" key={ownership.owner}>
+                        <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <time className="mb-1 text-xs leading-none text-gray-400 dark:text-gray-500">{dateFormatter(ownership.start_date)} - {dateFormatter(ownership.end_date)}</time>
+                        <h3 className="font-medium text-gray-900 dark:text-white text-xs">{ownership.owner}</h3>
+                      </li>
+                    ))
+                  }
 
-                {/* <li className="mb-6 ml-4">
+                  {/* <li className="mb-6 ml-4">
                   <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                   <time className="mb-1 text-xs leading-none text-gray-400 dark:text-gray-500">February 2022 - March 2022</time>
                   <h3 className="font-medium text-gray-900 dark:text-white text-xs">David Kim</h3>
@@ -86,33 +87,34 @@ const CarDetails = () => {
                   <time className="mb-1 text-xs leading-none text-gray-400 dark:text-gray-500">February 2022 - March 2022</time>
                   <h3 className="font-medium text-gray-900 dark:text-white text-xs">David Kim</h3>
                 </li> */}
-              </ol>
+                </ol>
+              </div>
+
+              <div className=''>
+                <div className='my-2 text-sm font-semibold'>Accidents</div>
+                {
+                  data.accidents.length > 0 ? <ol className="relative border-l border-gray-200 dark:border-gray-700">
+                    {
+
+                      data.accidents.slice().reverse().map((accident) => (
+                        <li className="mb-6 ml-4" key={accident.date}>
+                          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                          <time className="mb-1 text-xs font-normal leading-none text-gray-400 dark:text-gray-500">{dateFormatter(accident.date)}</time>
+                          {/* <h3 className="font-semibold text-gray-900 dark:text-white">David Kim</h3> */}
+                          <p className="mb-4 text-gray-900 dark:text-gray-400 text-xs font-medium">{accident.description}</p>
+                        </li>
+                      ))
+                    }
+                  </ol> : <div className='text-xs text-gray-500'>No accident</div>
+                }
+              </div>
             </div>
 
-            <div className=''>
-              <div className='my-2 text-sm font-semibold'>Accidents</div>
-              {
-                data.accidents.length > 0 ? <ol className="relative border-l border-gray-200 dark:border-gray-700">
-                  {
+            <div className='text-justify md:mr-10 md:mb-0 mb-5'>
+              <div className='my-2 text-sm font-semibold'>Vehicle Identification Number (VIN)</div>
 
-                    data.accidents.slice().reverse().map((accident) => (
-                      <li className="mb-6 ml-4" key={accident.date}>
-                        <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                        <time className="mb-1 text-xs font-normal leading-none text-gray-400 dark:text-gray-500">{dateFormatter(accident.date)}</time>
-                        {/* <h3 className="font-semibold text-gray-900 dark:text-white">David Kim</h3> */}
-                        <p className="mb-4 text-gray-900 dark:text-gray-400 text-xs font-medium">{accident.description}</p>
-                      </li>
-                    ))
-                  }
-                </ol> : <div className='text-xs text-gray-500'>No accident</div>
-              }
+              <span className='text-sm text-gray-600 bg-gray-100 rounded px-2 py-1'>{data.vin}</span>
             </div>
-          </div>
-
-          <div className='text-justify md:mr-10 md:mb-0 mb-5'>
-            <div className='my-2 text-sm font-semibold'>Vehicle Identification Number (VIN)</div>
-
-            <span className='text-sm text-gray-600 bg-gray-100 rounded px-2 py-1'>{data.vin}</span>
           </div>
 
           {/* <div>

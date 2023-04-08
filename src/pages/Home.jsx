@@ -12,11 +12,8 @@ const Home = () => {
   const data = useSelector(state => state.car.carsData);
 
   useEffect(() => {
-    console.log('data', data);
     setCarsData(data);
   }, [])
-
-  // console.log('carsData1', carsData1);
 
   return (
     <div className='max-w-screen-lg mx-auto pt-5'>
