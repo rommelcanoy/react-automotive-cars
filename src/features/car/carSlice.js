@@ -3,7 +3,8 @@ import carsData from '../../data/cars-dataset.json'
 
 const initialState = {
   carsData: carsData,
-  count: 0,
+  filteredCarsData: [],
+  count: 0, 
 }
 
 export const carSlice = createSlice({
@@ -12,10 +13,13 @@ export const carSlice = createSlice({
   reducers: {
     increment: (state) => {
       state.count += 1;
-    }
+    },
+    setFilteredCarsData: (state, action) => {
+      state.filteredCarsData = action.payload; // Update filteredCarsData in Redux store
+    },
   }
 })
 
-export const { increment } = carSlice.actions;
+export const { increment, setFilteredCarsData } = carSlice.actions;
 
 export default carSlice.reducer;
