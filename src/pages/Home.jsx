@@ -10,6 +10,7 @@ const Home = () => {
 
   const [carsData, setCarsData] = useState([]);
   const data = useSelector(state => state.car.carsData);
+  const filteredCarsData = useSelector((state) => state.car.filteredCarsData);
 
   useEffect(() => {
     setCarsData(data);
@@ -23,7 +24,11 @@ const Home = () => {
       </div>
       {/* </div> */}
       <div className=''>
-        <CarList cars={carsData} />
+        {filteredCarsData && filteredCarsData.length > 0 ? (
+          <CarList cars={filteredCarsData} />
+        ) : (
+          <CarList cars={carsData} />
+        )}
       </div>
     </div>
   )
