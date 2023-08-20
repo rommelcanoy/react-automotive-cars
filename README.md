@@ -10,7 +10,7 @@ The Automotive Cars Database is a powerful web application built with React and 
 
 ## Search and Filters
 
-The Car Database boasts a robust search and filtering system. Users can easily locate cars by specifying Make, Model, Year (MMY), or Vehicle Identification Number (VIN). Search results update in real-time as users input their criteria.
+The platform boasts a robust search and filtering system. Users can easily locate cars by specifying Make, Model, Year (MMY), or Vehicle Identification Number (VIN). Search results update in real-time as users input their criteria.
 
 ## Car Details
 
@@ -24,7 +24,7 @@ Upon selecting a car from the search results, users can access a detailed view. 
 
 ## Ownership and Accidents History
 
-Transparency is a priority. The Car Database presents users with the ownership and accidents history of each car. This information enables users to make informed decisions by understanding the car's past experiences.
+Transparency is a priority. The platform presents users with the ownership and accidents history of each car. This information enables users to make informed decisions by understanding the car's past experiences.
 
 ## Car Description
 
@@ -32,8 +32,8 @@ A succinct yet informative car description provides users with essential details
 
 ## Album
 
-Enhancing user experience, the Car Database showcases a collection of high-quality images for each car in an album format. These images offer users a detailed look at the car.
+Enhancing user experience, the platform showcases a collection of high-quality images for each car in an album format. These images offer users a detailed look at the car.
 
 ## Responsive Design
 
-The Car Database is fully responsive, ensuring a seamless experience across various devices and screen sizes. Whether accessed from a desktop, tablet, or smartphone, users can explore the database with ease.
+The Automotive Cars Database is fully responsive, ensuring a seamless experience across various devices and screen sizes. Whether accessed from a desktop, tablet, or smartphone, users can explore the database with ease.
