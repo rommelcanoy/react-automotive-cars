@@ -1,6 +1,6 @@
 # Automotive Cars Database
 
-Welcome to the Automotive Cars Database, a fully responsive web application developed using React and Vite. This application empowers users to search, filter, and explore a list of cars based on their Make, Model, Year (MMY), and Vehicle Identification Number (VIN). Please note that the car list and details in this application are represented with dummy data for demonstration purposes. This README offers an overview of the features and functionalities of the Car Database.
+Welcome to the Automotive Cars Database, a fully responsive web application developed using React and Vite. This application empowers users to search, filter, and explore a list of cars based on their Make, Model, Year (MMY), and Vehicle Identification Number (VIN). Please note that the car list and details in this application are represented with dummy data for demonstration purposes.
 
 ## Introduction
 
